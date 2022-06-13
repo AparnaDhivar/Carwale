@@ -1,0 +1,589 @@
+$grey :rgb(110, 110, 110);
+$blue :  rgb(30, 157, 241) ;
+$link-color : rgba(4, 134, 22, 0.911);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.navbar{
+    display: flex;
+    align-items: baseline;
+   
+    .logo{
+        margin-left: 3%;
+        
+        width: 10%;
+    }
+    // .link{
+        
+    // }
+    .headings{
+        margin-left: 8%;
+        width: 50%;
+        ul{
+            display: flex;
+            width: 100%;
+            li{
+                list-style-type: none;
+                width:120%;
+                color:grey;
+
+                a{
+                     text-decoration: none;
+                     color: grey;
+                }
+                a:hover{
+                    border-bottom: 5px solid green;
+                }
+            }
+            
+        }
+    }
+    
+    .search{
+        margin-left: 3%;
+        margin-bottom: 0.5%;
+        width: 18%;
+        display: flex;
+        input{
+           
+            padding: 7%;
+            width: 250%;
+        }
+        .icon2{
+            position: absolute;
+            top: 3.5%;
+            left: 83%;
+            color: grey;
+        }
+    }
+    .icons{
+        position: relative;
+        width: 15%;
+        .icon1{
+            margin-left: 2%;
+            color: grey
+        }
+    }
+}
+.video{
+    p{
+        position: absolute;
+        color: white;
+        top: 15%;
+        left: 30%;
+        font-weight: bold;
+        font-size: x-large;
+    }
+    button{
+        position: absolute;
+        top: 28%;
+        left: 45%;
+        background-color: rgb(199, 8, 8);
+        color: white;
+        padding: 0.5%;
+    }
+    h2{
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 40%;
+    }
+    form{
+        background-color: azure;
+        select{
+            position: absolute;
+            padding: 1%;
+            top: 60%;
+            left: 28%;
+            width: 8%;
+        }
+        input[type=search]{
+            position: absolute;
+            padding: 1%;
+            top: 60%;
+            left: 36%;
+            width: 30%;
+        }
+        input[type=button]{
+            position: absolute;
+            padding: 1%;
+            top: 60%;
+            left: 66%;
+            width: 10%;
+            background-color: rgb(238, 31, 31);
+            color: white;
+        }
+    }
+    .connector{
+        position: absolute;
+        padding: 1%;
+        top: 72%;
+        left: 45%;
+        /* width: 100%; */
+           
+          
+        a{
+            color: white;
+           
+        }
+    }
+}
+.featuredCars{
+    margin: 1% 8% 3% 8%;
+    input[type=button]{
+        position: absolute;
+        padding: 1%;
+        top: 60%;
+        left: 66%;
+        width: 10%;
+        background-color: rgb(238, 31, 31);
+        color: white;
+    }
+    .link2{
+        ul{
+            li{ 
+                display: inline;
+                padding:0 10px;
+                list-style-type: none;
+                a{
+                    text-decoration: none;
+                    color: rgb(179, 179, 179);
+                }
+            }
+
+            li:hover{
+                border-bottom: 3px solid $link-color;
+                color: $link-color;
+                padding: 3.5px;
+            }
+        }
+        hr{
+            margin-bottom: 2%;
+            margin-top: 0.5%;
+        }
+    }
+
+    .car-gallery{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 5px;
+       
+        .cars1, .cars2 ,.cars3{
+            border: 1px solid grey;
+            div{
+                display: block;
+            }
+            .car-img{
+                width: 100%;
+                height: 200px;
+            }
+            .details{
+                background-color: rgba(238, 238, 238, 0.993);
+                padding: 10px;
+            }
+        }
+        .cars1 p:first-child, .cars2 p:first-child, .cars3 p:first-child {
+            font-size: larger;
+        }
+        .cars1 a , .cars2 a , .cars3 a{
+            text-decoration: none;
+        }
+    }
+
+
+}
+.viewbrands{
+    margin-top: 3%;
+    a{
+        text-decoration: none;
+        color: rgb(8, 92, 148);
+        font-size: larger;
+        font-weight: 200;
+        margin: 3% 0% 0% 8%;
+    }
+}
+.name{
+    margin: 3% 0% 2% 0%;
+    p{
+        color: $grey;
+        font-size: x-large;
+        font-weight: 600;
+    }
+}
+
+.brands{
+        display:grid;
+        grid-template-columns: auto auto auto auto auto auto;           
+        margin: 0% 8% 3% 8%;
+        img{
+        border: 2px solid grey;
+        padding: 10px 50px 10px 50px;
+        height: 71px;
+        width: 71px;
+        }
+        .view{
+            padding: 0% 285% 0% 292%;
+            border: 2px solid grey;
+            a{
+                text-decoration: none;
+                color: rgb(8, 92, 148);
+                font-size: large;
+               
+            }
+        }
+   
+}
+.choice{
+    margin: 0% 8% 3% 8%;
+    h2{
+        margin-top: 3%;
+    }
+    .select{
+        margin-top: 1%;
+        ul{
+            display: flex;
+            li{
+                list-style-type: none;
+                padding: 10px;
+                a{
+                    text-decoration: none;
+                    color: $grey;
+                    font-size: small;
+                }
+            }
+            li:hover{
+                border-bottom: 3px solid rgb(16, 109, 170);
+                color:rgb(16, 109, 170);
+            }
+        }
+
+    }
+    .cost{
+        background-color: rgb(228, 228, 228);
+        border: 2px solid rgb(170, 170, 170);
+        padding: 30px 20px 30px 20px;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        input{
+            padding: 10px 40px 10px 40px;
+            margin: 5% 5% 5% 5%;
+            border-radius: 20px 20px 20px 20px ;
+            color: $grey ;
+        }
+        input:hover{
+            border: 3px solid rgb(16, 109, 170)  ;
+            color:rgb(16, 109, 170);
+        }
+    }
+}
+.topcars{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    margin: 0% 8% 3% 8%;
+    .SUVs , .Sedans , .Hatch {
+      
+        border: 2px solid $grey;
+        border-radius: 5px 5px 5px 5px;
+       
+        .images1{
+            img{
+                width: 100%;
+                height: 250px;
+            }
+           
+        }
+        .details1{
+            display: block;
+            background-color: rgba(238, 238, 238, 0.993);
+            padding: 10px;
+            b{
+                font-size: large;
+            }
+        }
+    }
+}
+.roadprice{
+    background-image: url("/images/OIP.jfif");
+    background-size: cover;
+    justify-items: flex-end;
+    form{
+        display: inline-grid;
+        background-color: rgba(110, 102, 102, 0.685);
+        border: 1px solid  rgba(124, 117, 117, 0.685);
+        border-radius:5px 5px 5px 5px ;
+        padding: 22px;
+        margin: 80px 3px 80px 610px;
+      
+        label{
+            font-size: xx-large;
+            font-weight: 600;
+            color: white;
+            margin: 6px;
+        }
+        input{
+            padding: 15px;
+            margin: 5px;
+        }
+        p{
+            font-size: small;
+            color: white;
+            margin: 4px;
+        }
+    }
+}
+
+// .compare{
+//     display: grid;
+//     gap: 3px;
+//     background-color:$grey;
+//     padding: 2px;
+//     grid-template-columns: 33% 33% 33%;
+//     .c-car1 , .c-car2 , .c-car3 {
+//           .part1{
+           
+//             text-align: center;
+//             padding: 3px;
+//             font-size: 30px;
+//             grid-column: 1;
+//             grid-row: 1;
+              
+//                 img{
+//                     width: 100%;
+//                     height: 100%;
+//                 }
+//                 p{
+//                     color: $grey;
+//                 }
+
+//              }
+//             .part2{
+              
+//                 text-align: center;
+//                 padding: 3px;
+//                 font-size: 30px;
+//                 grid-column: 2;
+//                 grid-row: 1;
+               
+//                 img{
+//                     width: 100%;
+//                     height: 100%;
+//                 }
+//                 p{
+//                     color: $grey;
+//                 }
+
+//             }
+//             .vs{
+               
+//                 text-align: center;
+//                 padding: 3px;
+//                 font-size: 30px;
+//                     grid-column: 1 / span 2;
+//                     grid-row: 2;
+                  
+//             }
+//         }
+//     }     
+     h2{
+         margin: 3% 0% 0% 8%;
+         color: black;
+     }
+    .carCompare{
+        display: grid;
+        gap: 3px;
+        background-color:white;
+        padding: 2px;
+        grid-template-columns: 33% 33% 33%;
+        margin: 0% 8% 0% 8%;
+        .grid-container {
+            display: grid;
+            gap: 2px;
+            border: 2px solid gray;
+            padding: 10px;
+          
+            width: 88%;
+            height: 87%;
+                img{
+                    width: 90%;
+                    height: 60%;
+                    margin-top: 0%;
+                }
+                p{
+                    color: rgb(160, 158, 158);
+                }
+                p , b , small {
+                   font-size: medium;
+                }
+
+          }
+          
+          .grid-item {
+          
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+          }
+          
+          .item1 {
+            grid-column: 1;
+            grid-row: 1;
+            text-align: left;
+            border-right: 1px solid $grey;
+            .vs{
+                position: relative;
+                z-index: 10;
+                border: 1px solid;
+                border-radius: 50%;
+                font-size: 14pt;
+                top: -202px;
+                left: 165px;
+                background-color: white;
+            }
+          }
+          
+          .item2 {
+            grid-column: 2;
+            grid-row: 1;
+            text-align: left;
+          }
+          
+          .item3 {
+            grid-column: 1 / span 2;
+            grid-row: 2;
+            input{
+                padding: 10px;
+                margin-top: 0.5%;
+                width: 100%;
+                color: rgb(30, 157, 241);
+                border-color: rgb(30, 157, 241) ;
+            }
+          
+          }
+              
+        
+
+    }      
+    
+.comparison{
+    text-decoration: none;
+    margin: 0% 8% 0% 8%;
+    color: $blue;
+    font-weight: bold;
+    font-size: large;
+}
+
+.Popular{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+   
+    margin: 0% 8% 1% 8%;
+    .p-car1 , .p-car2 , .p-car3 {
+        border: 2px solid $grey;
+        border-radius: 5px 5px 5px 5px;
+        margin: 2% 5% 0% 0%;
+        .pic{
+            img{
+                width: 90%;
+                height: 50%;
+            }
+
+        }
+        .text{
+            display: block;
+            background-color: rgba(238, 238, 238, 0.993);
+            padding: 10px;
+            font-size: large;
+
+        }
+    }
+}
+
+.latest{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+   
+    margin: 0% 8% 1% 8%;
+    .l-car1 , .l-car2 , .l-car3 {
+        border: 2px solid $grey;
+        border-radius: 5px 5px 5px 5px;
+        margin: 2% 5% 0% 0%;
+        .pic1{
+            img{
+                width: 90%;
+                height: 50%;
+            }
+
+        }
+        .text1{
+            display: block;
+            background-color: rgba(238, 238, 238, 0.993);
+            padding: 10px;
+            font-size: large;
+           small{
+             color: $grey;
+           }
+        }
+    }
+
+}
+
+.end{
+    background-color: rgb(3, 85, 105);
+   margin-top: 3%;
+  
+    .first{
+       text-align: center;
+       svg{
+        margin: 8px;
+       
+       }
+      
+    }
+    .division {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        padding: 5px;
+        .div-1{
+            margin-left: 30%;
+            color: rgb(201, 188, 188);
+            padding: 5%;
+            border-right: 1px solid rgb(201, 188, 188);;
+            font-size: medium;
+        }
+        .div-2{
+            font-size: medium;
+            color: rgb(201, 188, 188);;
+            padding: 5%;
+            border-right: 1px solid rgb(201, 188, 188);;
+        }
+        .div-3{
+            color:  rgb(201, 188, 188);
+            padding: 5%;
+            img{
+                width: 40%;
+                height: 25%;
+            }
+                .icon{
+                    border: 1px solid rgb(201, 188, 188);;
+                    border-radius: 50px;
+                    color:  rgb(201, 188, 188);;
+                    padding: 5px;
+                    margin: 5px;
+                }
+            
+
+        }
+    }
+    .last{
+        text-align: center;
+        color:  rgb(201, 188, 188);
+        padding: 1%;
+    }
+}
